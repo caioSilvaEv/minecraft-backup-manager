@@ -1,0 +1,29 @@
+{
+  "server_name": "server_b",
+  "world_path": "/workspaces/sevidor/Minecraft/crafty-4/servers/224e8e53-f505-483b-9a88-ed576cf436c8/world",
+  "local_archive_dir": "./local_backups",
+  "temp_dir": "./tmp",
+
+  "rcon": {
+    "host": "127.0.0.1",
+    "port": 25575,
+    "password": "Eu_nao_sou_burro_de_colocar_a_senha_aqui",
+    "timeout_seconds": 5
+  },
+
+  "cloud": {
+    "enabled": true,
+    "rclone_remote": "gdrive",
+    "remote_folder": "minecraft-backups",
+    "latest_name": "world_latest.zip"
+  },
+
+  "retention": {
+    "keep_last_n": 48
+  },
+
+  "backup": {
+    "flush_seconds": 3,
+    "pause_save_seconds": 2
+  }
+}
